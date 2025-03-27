@@ -36,7 +36,7 @@ const WelcomeLayout = () => {
           variant="contained"
           color="primary"
           sx={{ px: 4, py: 1.5, fontSize: "1.1rem", borderRadius: "8px", mt: 2 }}
-          onClick={() => navigate("/login")}
+          onClick={() => navigate("/signin")}
         >
           Get Started
         </Button>

@@ -16,8 +16,8 @@ function App() {
         <Routes>
           <Route path="/*" element={<DashboardLayout />} />
           <Route path="/landing/*" element={<WelcomeLayout />} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/register" element={<Register/>} />
+          <Route path="/signin" element={<Login/>} />
+          <Route path="/signup" element={<Register/>} />
         </Routes>
       </ThemeProvider>
     </ColorModeContext.Provider>
