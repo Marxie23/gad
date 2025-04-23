@@ -29,11 +29,9 @@ const TrainingManagement = () => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, p: 4 }}>
-      <Typography variant="h4" fontWeight="bold" mb={3}>Manage Training and Resources</Typography>
-
+    <Box sx={{ flexGrow: 1, p: 1 }}>
+      <Typography variant="h4" fontWeight="bold" mb={1}>Manage Training and Resources</Typography>
       <Button variant="contained" onClick={handleOpen} sx={{ mb: 3 }}>Add New Training or Resource</Button>
-
       <Grid container spacing={3}>
         {trainingResources.map((resource, index) => (
           <Grid item xs={12} md={6} key={index}>

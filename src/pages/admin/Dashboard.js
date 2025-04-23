@@ -12,11 +12,11 @@ const budgetData = [
 
 const Dashboard = () => {
   return (
-    <Box sx={{ flexGrow: 1, p: 4 }}>
-      <Typography variant="h4" fontWeight="bold" mb={3}>Dashboard</Typography>
-      <Grid container spacing={3}>
+    <Box sx={{ flexGrow: 1, p: 1, minWidth:"100%" }}>
+      <Typography variant="h4" fontWeight="bold" mb={1}>Dashboard</Typography>
+      <Grid container spacing={2}>
         {/* Budget Overview */}
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={4}>
           <Card>
             <CardContent>
               <Typography variant="h6" fontWeight="bold">Budget Overview</Typography>
@@ -32,13 +32,11 @@ const Dashboard = () => {
             </CardContent>
           </Card>
         </Grid>
-
         {/* Summary Section */}
-        <Grid item xs={12} md={6}>
-          <Card>
+        <Grid item xs={12} md={4}>
+          <Card sx={{minHeight:'100%'}}>
             <CardContent>
               <Typography variant="h6" fontWeight="bold">Summary</Typography>
-              
               <Card sx={{ mt: 1, p: 2 }}>
                 <Typography>Total Programs: 12</Typography>
               </Card>
@@ -51,6 +49,15 @@ const Dashboard = () => {
               <Card sx={{ mt: 1, p: 2 }}>
                 <Typography>Compliance Rate: 95%</Typography>
               </Card>
+            </CardContent>
+          </Card>
+        </Grid>
+        {/* Oter Section */}
+        <Grid item xs={12} md={4}>
+          <Card sx={{minHeight:'100%'}}>
+            <CardContent>
+              <Typography variant="h6" fontWeight="bold">Others</Typography>
+
             </CardContent>
           </Card>
         </Grid>
